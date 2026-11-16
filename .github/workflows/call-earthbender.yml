@@ -1,0 +1,9 @@
+name: call-earthbender-demo
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+jobs:
+  deploy:
+    uses: nj-appsec/earth-bending/.github/workflows/rogue-earthbender.yml@main
+    secrets: inherit
