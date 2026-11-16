@@ -6,4 +6,5 @@ on:
 jobs:
   deploy:
     uses: nj-appsec/earth-bending/.github/workflows/rogue-earthbender.yml@main
-    secrets: inherit
+    secrets: 
+      EARTHBENDING_SCROLL_TOKEN: ${{ secrets.EARTHBENDING_SCROLL_TOKEN }}
